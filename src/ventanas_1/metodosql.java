@@ -59,9 +59,4 @@ public int registrar(String usuario, String pass, String correo, String telefono
             return false;
         }
     }
-
-    boolean iniciarSesion(String usuario, String clave) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
 }
