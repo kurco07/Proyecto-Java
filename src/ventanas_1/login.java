@@ -18,7 +18,8 @@ int xMouse = 0, yMouse = 0;
         this.setLocationRelativeTo(null);
     }
 
-  
+    metodosql login = new metodosql();
+    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -340,7 +341,15 @@ int xMouse = 0, yMouse = 0;
     }//GEN-LAST:event_CampoPassActionPerformed
 
     private void BtnIngresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnIngresarActionPerformed
-        // TODO add your handling code here:
+        String usuario = TxtIngresarUsuario.getText();
+        String clave = CampoPass.getText();
+        if (login.iniciarSesion(usuario, clave)) {
+                       System.out.println("Inicio sesion exitosa");
+        } else {
+                       System.out.println("Inicio de sesion fallida");
+ 
+
+        }
     }//GEN-LAST:event_BtnIngresarActionPerformed
 
     /**
